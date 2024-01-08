@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;;
+}
+
+body{
+    height: 200vh;
+    background:linear-gradient(to right, violet, pink)
+}
+
+.estrellita{
+    border: 2px solid black;
+    font-size: 50px;
+    background-color: aqua;
+    position: fixed;
+    top:20px;
+    left:20px;
+    border-radius: 30%;
+    transition:.3s;
+    
+}
+
+.estrellita:hover{
+    rotate: 1.75turn;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+
+
+
+.dog{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/imagen-quieta-perrito.JPG");
+    box-shadow: 5px 5px 10px black;
+}
+
+/*cuando haga click en el velador , se añade esta clase */
+.dog_activo{
+    background-image: url("../img/imagen-animada-perrito.gif");
+}
+
+.boton_celular{
+    position: absolute;
+    bottom:12%;
+    right:16%;
+    width: 30px;
+    height: 50px;
+    border:1px solid red;
+    border-radius: 40%;
+    cursor: pointer;
+}
